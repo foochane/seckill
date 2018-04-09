@@ -1,23 +1,3 @@
-##一、Java高并发秒杀APi之业务分析与DAO层代码编写
-###1.构建maven项目
-首先我们要搭建出一个符合Maven约定的目录来,这里大致有两种方式。
-第一种:
-第一种使用命令行手动构建一个maven结构的目录,命令如下：
-
->mvn archetype:generate -DgroupId=com.suny.seckill -DartifactId=seckill -Dpackage=com.suny.seckill -Dversion=1.0-SNAPSHOT -DarchetypeArtifactId=maven-archetype-webapp
-
-第二种：在IDEA种直接创建工程
-点击左上角File>New>Project>Maven，找到org.apache.cocoon:cocoon-22-archetype-webapp,选中它,然后点击Next继续
-![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建1.png)  
-填写maven的坐标
-![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建2.png)  
-Maven的配置信息
-![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建3.png)  
-选择保存的位置
-![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建4.png)  
-   
-数据库建立
-``` 
 -- 整个项目的数据库脚本
 -- 开始创建一个数据库
 CREATE DATABASE seckill;
@@ -58,8 +38,3 @@ create table success_killed(
   PRIMARY KEY (seckill_id,user_phone), /*联合主键*/
   KEY idx_create_time(create_time)
 )ENGINE =InnoDB DEFAULT CHARSET =utf8 COMMENT ='秒杀成功明细表';
-```
-
-
-
-
