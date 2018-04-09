@@ -75,3 +75,7 @@ create table success_killed(
 ```
 
 
+配置工程目录
+![](https://github.com/foochane/seckill/blob/master/screenshot/配置工程目录.png)  
+   
+
