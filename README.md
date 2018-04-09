@@ -1,22 +1,22 @@
-##一、Java高并发秒杀APi之业务分析与DAO层代码编写
-###1.构建maven项目
+## 一、Java高并发秒杀APi之业务分析与DAO层代码编写
+### 1.构建maven项目
 首先我们要搭建出一个符合Maven约定的目录来,这里大致有两种方式。
 第一种:
 第一种使用命令行手动构建一个maven结构的目录,命令如下：
 
 >mvn archetype:generate -DgroupId=com.suny.seckill -DartifactId=seckill -Dpackage=com.suny.seckill -Dversion=1.0-SNAPSHOT -DarchetypeArtifactId=maven-archetype-webapp
 
-第二种：在IDEA种直接创建工程
+第二种：在IDEA种直接创建工程            
 点击左上角File>New>Project>Maven，找到org.apache.cocoon:cocoon-22-archetype-webapp,选中它,然后点击Next继续
 ![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建1.png)  
-填写maven的坐标
+填写maven的坐标            
 ![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建2.png)  
-Maven的配置信息
+Maven的配置信息      
 ![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建3.png)  
-选择保存的位置
+选择保存的位置            
 ![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建4.png)  
    
-数据库建立
+数据库建立                       
 ``` 
 -- 整个项目的数据库脚本
 -- 开始创建一个数据库
@@ -61,7 +61,7 @@ create table success_killed(
 ```
 
 
-修改web.xml文件
+修改web.xml文件              
 ``` 
 
 <web-app xmlns="http://java.sun.com/xml/ns/javaee"
@@ -75,7 +75,7 @@ create table success_killed(
 ```
 
 
-配置工程目录
+配置工程目录                                
 ![](https://github.com/foochane/seckill/blob/master/screenshot/配置工程目录.png)  
    
 
