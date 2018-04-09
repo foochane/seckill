@@ -7,7 +7,9 @@
 >mvn archetype:generate -DgroupId=com.suny.seckill -DartifactId=seckill -Dpackage=com.suny.seckill -Dversion=1.0-SNAPSHOT -DarchetypeArtifactId=maven-archetype-webapp
 
 第二种：在IDEA种直接创建工程
- ![填写Maven在你本机的位置](../screenshot/maven工程创建1.png)  
-
-
+![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建1.png)  
+![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建2.png)  
+![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建3.png)  
+![](https://github.com/foochane/seckill/blob/master/screenshot/maven工程创建4.png)  
+   
 
